@@ -13,7 +13,7 @@ if (self.__WB_MANIFEST) {
 }
 
 // Disable caching strategies by removing Workbox routes
-workbox.routing.setDefaultHandler(() => {
+workbox.routing.setDefaultHandler(({ event }) => {
     return fetch(event.request);
 });
 
