@@ -6,12 +6,6 @@ import { cn } from "@/lib/utils"
 import { colors } from '@/utils/colors'
 import { Cross1Icon } from '@radix-ui/react-icons'
 
-export interface ToastProps {
-    id: string;
-    title?: string;
-    description?: string;
-}
-
 const ToastProvider = ToastPrimitives.Provider
 
 const ToastViewport = React.forwardRef<
